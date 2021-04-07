@@ -1,5 +1,3 @@
-# My solution to some CODEWARS exercises.
+# My solution to some [CODEWARS](https://www.codewars.com) exercises.
 
 <img alt='CodeWars' src='https://www.codewars.com/users/PabloCabreraR/badges/large' />
-
-[CODEWARS](https://www.codewars.com)
