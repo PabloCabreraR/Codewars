@@ -12,11 +12,11 @@
 
 
 // SOLUTIONS
-function persistence(num) {
-    let counter = 0;
-    while (num.toString().length !== 1) {
-      num = num.toString().split("").reduce((acc, number) => acc * number);
-      counter++;
-    }
-    return counter;
- }
+const persistence = (num) => {
+  let counter = 0
+  while (num.toString().length !== 1) {
+    num = num.toString().split("").reduce((acc, number) => acc * number)
+    counter++
+  }
+  return counter
+}
