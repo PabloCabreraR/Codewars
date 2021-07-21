@@ -6,13 +6,5 @@
 
 
 // SOLUTION
-function findOdd(A) {
-    const counters = {}
-    A.forEach((number)=>{
-      if (counters[number]){counters[number]++}
-      else {counters[number]=1}
-    })
-    for (let num in counters){
-      if (counters[num]%2 === 1) return Number(num)
-    }
-  }
+
+const findOdd = (Arr) => Arr.find((check) => Arr.filter((num) => check === num).length % 2 === 1)
