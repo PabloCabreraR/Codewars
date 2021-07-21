@@ -5,11 +5,5 @@
 
 
 // SOLUTION
-const countBits = function(n) {
-    let binaryN = n.toString(2).split('')
-    let counter = 0
-    binaryN.forEach((number)=>{
-      if (number === '1') counter++
-    })
-    return counter
-  };
+
+const countBits = (n) => n.toString(2).split("").reduce((acc, num) => num == "1" ? acc+=1 : acc, 0)
