@@ -8,8 +8,5 @@
 
 
 // SOLUTION
-function abbrevName(name){
-    let firstLetter = name.slice(0,1).toUpperCase()
-    let secondLetter = name.split(" ")[1].slice(0, 1).toUpperCase()
-    return `${firstLetter}.${secondLetter}`
-  }
+
+const abbrevName = (name) => name.split(' ').map(el=>el[0].toUpperCase()).join('.')
