@@ -10,20 +10,9 @@
 
 
 // SOLUTIONS
-function XO(str) {
-    let arr = str.toLowerCase().split('')
-    let countO = 0
-    let countX = 0
-    if (!arr.includes('x') && (!arr.includes('o'))){
-      return true
-    }else{
-      for (let i = 0; i < arr.length; i++){
-        if (arr[i] === 'x'){
-          countX++
-        }else if (arr[i] === 'o'){
-          countO++
-        }
-      }
-      return (countX == countO) ? true : false
-    }
+const XO = (str) => {
+  const strArray = str.toLowerCase().split('')
+  const numberOfO = strArray.reduce((acc, el)=> el == "o" ? acc+=1 : acc, 0)
+  const numberOfX = strArray.reduce((acc, el)=> el == "x" ? acc+=1 : acc, 0)
+  return numberOfO === numberOfX
 }
