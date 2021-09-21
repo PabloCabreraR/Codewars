@@ -13,7 +13,4 @@
 
 
 // SOLUTION
-var isSquare = function(n){
-    return Math.sqrt(n) % 1 === 0 ? true : false
-  
-  }
+const isSquare = (n) => Number.isInteger(Math.sqrt(n))
